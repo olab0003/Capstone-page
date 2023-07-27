@@ -1,0 +1,165 @@
+
+body {
+    font-family: "caveat",cursive;
+    background-color:#333333; 
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;*/
+  }
+  .nav{
+      display: flex;
+      /*flex-direction: column;*/
+      align-items: center;
+      justify-content: center;
+  }
+  
+  /*
+  div:nth-last-child(){
+  }
+  */
+  button {
+      border-radius: 4px;
+      align-items: center;
+  
+  }
+  h1{
+    color: wheat;
+    padding: 20px;
+  }
+  
+  a {
+      margin-top: 3px;
+  }
+  h4 {
+      color: wheat;
+  }
+  h2 {
+      letter-spacing: 3px;
+  }
+  p {
+    color:wheat;
+  }
+  .image-item{
+    border: #000 10px;
+  }
+  .checkbox{
+      display: none;
+  }
+  
+  /*the menu*/
+  .menu {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .menu-icon {
+      display: block;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+    }
+    
+    .menu-icon img {
+      width: 100%;
+      height: 100%;
+    }
+    
+    .menu-items {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 999;
+      list-style: none;
+      background-color: #fff;
+      padding: 10px;
+      display: none;
+    }
+    
+    .menu-items li {
+      margin-bottom: 10px;
+    }
+    
+    .menu-items a {
+      text-decoration: none;
+      color: #000;
+    }
+    
+    input[type="checkbox"]:checked ~ .menu-items {
+      display: block;
+    }
+    
+  
+  
+  
+      /* For mobile phones: */
+  @media (max-width: 767px) {
+      
+      .menu-icon {
+        display: block;
+      }
+      
+      
+      .menu-items li {
+        margin-bottom: 10px;
+      }
+    }
+    
+    /*other screen sizes */
+    @media (max-width: 480px) {
+      
+      /*smaller screens */
+      .col {
+        width: 100%;
+      }
+    }
+    
+    
+  
+  
+      /*the*/
+  
+     /* Add your preferred styling for the image gallery here */
+  
+  .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .image-item {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .pokemon-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .caption {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .show-caption {
+    display: block;
+  }
+  
+  .show-hd-image {
+    transform: scale(2);
+    z-index: 1;
+  }
+  
